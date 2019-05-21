@@ -1,0 +1,1 @@
+m_PlayerObject = instance_find(objPlayer, 0);

@@ -1,5 +1,3 @@
 /// @description  OnGround();
 
-//return place_meeting(x, y + 1, oParSolid) || (place_meeting(x, y + 1, oParJumpThru ) && !place_meeting(x, y, oParJumpThru));
-
-return IsBlocked(0, 1);
+return place_meeting(x, y + 1, objSolid) || (place_meeting(x, y + 1, objJumpThru ) && !place_meeting(x, y, objJumpThru));

@@ -1,12 +1,12 @@
 onGround = OnGround();
 
-cLeft  = IsBlocked(-1, 0); 
-cRight = IsBlocked(+1, 0);
+cLeft  = place_meeting(x - 1, y, objSolid); 
+cRight = place_meeting(x + 1, y, objSolid);
 
 if (cLeft) 
-    wallTarget = true;
+    wallTarget = instance_place(x - 1, y, objSolid);
 
 if (cRight) 
-    wallTarget = true;
+    wallTarget = instance_place(x + 1, y, objSolid);
 
 

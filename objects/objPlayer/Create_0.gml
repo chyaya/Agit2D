@@ -45,4 +45,17 @@ blocking  = false;
 //fallTime = 0;
 //fallMax  = 28;
 
+///////////////////////////////////////////////////////////////////////////////
+
+kLeft = false;
+kRight = false;
+kUp = false;
+kDown = false;
+kJump = false;
+kJumpRelease = false;
+kAction = false;
+kBlock = false;
+kRollL = false;
+kRollR = false;
+
 

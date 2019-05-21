@@ -3,12 +3,12 @@ if (!attacking) {
     switch (state) {
         case IDLE: 
             image_speed = 0.2;
-            sprite_index = sprManIdle;
+            sprite_index = sprWomanIdle;
         break;
         
         case RUN: 
             image_speed = 0.33; 
-			sprite_index = sprManMove;
+			sprite_index = sprWomanMove;
         break;
         
         case JUMP:

@@ -24,13 +24,13 @@ if (platformTarget) {
 }
 
 repeat(abs(vx)) {
-    if (place_meeting(x + sign(vx), y, oParSolid) && !place_meeting(x + sign(vx), y - 1, oParSolid))
+    if (place_meeting(x + sign(vx), y, objSolid) && !place_meeting(x + sign(vx), y - 1, objSolid))
         y -= 1;
          
-    if (place_meeting(x + sign(vx), y + 2, oParSolid) && !place_meeting(x + sign(vx), y + 1, oParSolid))
+    if (place_meeting(x + sign(vx), y + 2, objSolid) && !place_meeting(x + sign(vx), y + 1, objSolid))
         y += 1;
         
-    if (!place_meeting(x + sign(vx), y, oParSolid))
+    if (!place_meeting(x + sign(vx), y, objSolid))
         x += sign(vx);
     else
         vx = 0;

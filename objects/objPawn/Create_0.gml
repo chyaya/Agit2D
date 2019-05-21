@@ -17,6 +17,5 @@ cx = 0;
 cy = 0;
 
 onGround = OnGround();
-cLeft    = IsBlocked(-1, 0);
-cRight   = IsBlocked(1, 0);
-
+cLeft    = place_meeting(x - 1, y, objSolid);
+cRight   = place_meeting(x + 1, y, objSolid);

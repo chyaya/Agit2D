@@ -27,10 +27,10 @@ if (platformTarget) {
 
 
 repeat(abs(vx)) {
-    if (IsBlocked(sign(vx), 0) && !IsBlocked(sign(vx), -1))
+    if (place_meeting(x + sign(vx), y, objSolid) && !place_meeting(x + sign(vx), y - 1, objSolid))
         y -= 1;
          
-    if (IsBlocked(sign(vx), +2) && !IsBlocked(sign(vx), +1))
+    if (place_meeting(x + sign(vx), y + 2, objSolid) && !place_meeting(x + sign(vx), y + 1, objSolid))
         y += 1;
       
 	  /*
@@ -55,10 +55,10 @@ repeat(abs(vx)) {
                 break;
             }        
         }
-    } // End push block //          
+    } // End push block //  
 	*/
-          
-    if (!IsBlocked(sign(vx), 0))
+
+    if (!place_meeting(x + sign(vx), y, objSolid))
         x += sign(vx);
     else
         vx = 0;
