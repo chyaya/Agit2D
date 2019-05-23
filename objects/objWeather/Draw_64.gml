@@ -1,1 +1,0 @@
-draw_text(32, 32, string(current_hour) + ":" + string(current_minute) + ":" + string(current_second));

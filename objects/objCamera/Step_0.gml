@@ -46,21 +46,30 @@ camera_set_view_mat(m_Camera, vm);
 //	m_Zoom *= m_ZoomSpeed;
 //}
 
-//if(y < 300)
-//{
-//	if(m_Zoom > 1.0)
-//	{
-		
-//	}
-//	else
-//	{
-//		m_Zoom = 1.0;
-//	}
-//}
-//else
-//{
-//	m_Zoom = 4.0;
-//}
+if(y < 400)
+{
+	if(m_Zoom > 1.0)
+	{
+		m_Zoom -= delta_time*0.000002;
+	}
+	
+	if(m_Zoom <= 1.0)
+	{
+		m_Zoom = 1.0;
+	}
+}
+else
+{
+	if(m_Zoom < 4.0)
+	{
+		m_Zoom += delta_time*0.000001;
+	}
+	
+	if(m_Zoom >= 4.0)
+	{
+		m_Zoom = 4.0;
+	}
+}
 
 	
 if(m_LastZoom != m_Zoom)
