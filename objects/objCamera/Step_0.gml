@@ -60,14 +60,14 @@ if(y < 400)
 }
 else
 {
-	if(m_Zoom < 4.0)
+	if(m_Zoom < 3.0)
 	{
 		m_Zoom += delta_time*0.000001;
 	}
 	
-	if(m_Zoom >= 4.0)
+	if(m_Zoom >= 3.0)
 	{
-		m_Zoom = 4.0;
+		m_Zoom = 3.0;
 	}
 }
 
