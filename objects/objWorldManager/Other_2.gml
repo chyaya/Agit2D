@@ -1,5 +1,9 @@
 /// @description load data
 
+audio_group_load(footstep);
+
+audio_play_sound(sndZelda, 0, true);
+
 var fileName = "save.json";
 
 if(file_exists(fileName))

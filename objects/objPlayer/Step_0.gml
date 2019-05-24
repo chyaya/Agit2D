@@ -119,10 +119,18 @@ if (kJump) {
 
 // Jump state
 if (!onGround)
+{
 	state = JUMP;
+}
 // Run particles
 else if (random(100) > 85 && abs(vx) > 0.5)
+{
     instance_create_layer(x, y + 8, "Particles", objParticlePlayer);
+	
+	var rand = random(4);
+	var sndList = [sndFootstep1, sndFootstep2, sndFootstep3, sndFootstep4];
+	audio_play_sound(sndList[rand], 1, false);
+}
 
 // Swap facing during wall slide
 if (cRight && !onGround)
