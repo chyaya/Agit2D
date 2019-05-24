@@ -4,32 +4,6 @@
 
 var tempAccel, tempFric;
 
-/*
-if (instance_exists(oTouchCompatible)) {
-	// Disable double-click (increases input accuracy)
-	device_mouse_dbclick_enable(false);
-    
-	// LOL, magic numbers
-    
-	for (var i = 0; i < 8; ++i) {
-	    if (!kLeft)
-	        kLeft = device_mouse_check_button(i, mb_left) && device_mouse_x(i) > __view_get( e__VW.XView, 0 ) + 16 && device_mouse_x(i) < __view_get( e__VW.XView, 0 ) + 16 + 64 && device_mouse_y(i) > __view_get( e__VW.YView, 0 ) + 280 && device_mouse_y(i) < __view_get( e__VW.YView, 0 ) + 280 + 64;
-	    if (!kRight)
-	    kRight = device_mouse_check_button(i, mb_left) && device_mouse_x(i) > __view_get( e__VW.XView, 0 ) + 16 + 80 && device_mouse_x(i) < __view_get( e__VW.XView, 0 ) + 16 + 64 + 80 && device_mouse_y(i) > __view_get( e__VW.YView, 0 ) + 280 && device_mouse_y(i) < __view_get( e__VW.YView, 0 ) + 280 + 64;   
-        
-	    if (!kJump)
-	        kJump = device_mouse_check_button_pressed(i, mb_left) && device_mouse_x(i) > __view_get( e__VW.XView, 0 ) + 640 - 64 - 16 && device_mouse_x(i) < __view_get( e__VW.XView, 0 ) + 640 - 16 && device_mouse_y(i) > __view_get( e__VW.YView, 0 ) + 280 && device_mouse_y(i) < __view_get( e__VW.YView, 0 ) + 280 + 64;
-	    if (!kJumpRelease)
-	        kJumpRelease = device_mouse_check_button_released(i, mb_left) && device_mouse_x(i) > __view_get( e__VW.XView, 0 ) + 640 - 64 - 16 && device_mouse_x(i) < __view_get( e__VW.XView, 0 ) + 640 - 16 && device_mouse_y(i) > __view_get( e__VW.YView, 0 ) + 280 && device_mouse_y(i) < __view_get( e__VW.YView, 0 ) + 280 + 64;
-        
-	    if (!kAction)
-	        kAction = device_mouse_check_button_pressed(i, mb_left) && device_mouse_x(i) > __view_get( e__VW.XView, 0 ) + 640 - 64 - 16 - 80 && device_mouse_x(i) < __view_get( e__VW.XView, 0 ) + 640 - 16 - 80 && device_mouse_y(i) > __view_get( e__VW.YView, 0 ) + 280 && device_mouse_y(i) < __view_get( e__VW.YView, 0 ) + 280 + 64;
-	}
-     
-	//draw_sprite(sJumpButton, 0, view_xview[0] + 640 - 64 - 16, view_yview[0] + 280);
-	//draw_sprite(sAtkButton, 0, view_xview[0] + 640 - 64 - 96, view_yview[0] + 280); 
-}
-*/
 
 // Movement ///////////////////////////////////////////////////////////////////
 
@@ -147,8 +121,8 @@ if (kJump) {
 if (!onGround)
 	state = JUMP;
 // Run particles
-//else if (random(100) > 85 && abs(vx) > 0.5)
-//    instance_create(x, y + 8, oParticlePlayer);
+else if (random(100) > 85 && abs(vx) > 0.5)
+    instance_create_layer(x, y + 8, "Particles", objParticlePlayer);
 
 // Swap facing during wall slide
 if (cRight && !onGround)

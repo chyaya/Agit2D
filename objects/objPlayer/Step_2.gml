@@ -1,6 +1,6 @@
 /// @description  Entity Step 2.0
 
-/// EntityStep();
+//EntityStep();
 
 jumped = false;
 landed = false;
@@ -33,7 +33,7 @@ repeat(abs(vx)) {
     if (place_meeting(x + sign(vx), y + 2, objSolid) && !place_meeting(x + sign(vx), y + 1, objSolid))
         y += 1;
       
-	  /*
+	/*
     // Push block //
     if (place_meeting(x + sign(vx), y, oPushBlock)) {
         // Push slowly
@@ -55,7 +55,7 @@ repeat(abs(vx)) {
                 break;
             }        
         }
-    } // End push block //  
+    } // End push block //
 	*/
 
     if (!place_meeting(x + sign(vx), y, objSolid))

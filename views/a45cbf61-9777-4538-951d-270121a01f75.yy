@@ -7,7 +7,7 @@
         "b7d85893-d274-47b6-b28e-ffaa07bc22de"
     ],
     "filterType": "GMSprite",
-    "folderName": "group0",
+    "folderName": "button",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

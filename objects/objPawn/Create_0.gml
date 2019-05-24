@@ -1,4 +1,4 @@
-tileMapId = layer_tilemap_get_id("Tiles");
+//tileMapId = layer_tilemap_get_id("Tiles");
 
 jumped = false;
 landed = false;
