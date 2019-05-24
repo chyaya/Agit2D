@@ -8,7 +8,7 @@ event_inherited();
 facing = 1;
 
 // Movement ///////////////////////////////////////////////////////////////////
-groundAccel = 1.00;
+groundAccel = 0.50;
 groundFric  = 2.00;
 airAccel    = 0.75;
 airFric     = 0.01;

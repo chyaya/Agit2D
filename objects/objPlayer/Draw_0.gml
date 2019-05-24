@@ -12,33 +12,21 @@ if (!attacking) {
         break;
         
         case JUMP:
-           // // Mid jump   
-           // if (!(place_meeting(x, y + 2, oParSolid) && vy != 0) && vy >= -1.0 && vy <= 1.0) {  
-           //     if (blocking)
-           //         sprite_index = sPlayerJumpMShield;
-           //     else
-           //         sprite_index = sPlayerJumpM;  
-           //} else { 
-           //     // Rise + fall
-           //     if (vy <= 0) {
-           //         if (blocking)
-           //             sprite_index = sPlayerJumpUShield;
-           //         else  
-           //             sprite_index = sPlayerJumpU;  
-           //     } else {
-           //         if (blocking)
-           //             sprite_index = sPlayerJumpDShield;
-           //         else
-           //             sprite_index = sPlayerJumpD;
-           //     }
-           // }
+            // Mid jump   
+            if (!(place_meeting(x, y + 2, objSolid) && vy != 0) && vy >= -1.0 && vy <= 1.0) {  
+				sprite_index = sprWomanMove;  
+           } else { 
+                // Rise + fall
+                if (vy <= 0) {
+					sprite_index = sprWomanMove;  
+                } else {
+					sprite_index = sprWomanMove;
+                }
+            }
              
-           // // When against a wall   
-           // if (cRight || cLeft)
-           //     if (blocking)
-           //         sprite_index = sPlayerSlideShield;
-           //     else
-           //         sprite_index = sPlayerSlide;  
+            // When against a wall   
+            if (cRight || cLeft)
+				sprite_index = sprWomanMove;  
         break;
         
         case ROLL:
