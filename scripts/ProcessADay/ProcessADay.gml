@@ -10,27 +10,23 @@ with(objTree)
 
 repeat(3)
 {
-	var spawnX = random(room_width);
-
-	with(instance_create_layer(spawnX, 0, "Instances", objTree))
+	with(SpawnObject("Instances", objTree))
 	{
-		var success = false;
-	
-		for(var spawnY = 0; spawnY < room_height; ++spawnY)
-		{
-			if(place_meeting(spawnX, spawnY, objSolid))
-			{
-				y = spawnY;
-				success = true;
-				break;
-			}
-		}
-	
-		if(!success)
-		{
-			instance_destroy();
-		}
+		image_xscale = 0.1;
+		image_yscale = 0.1;
 	}
+}
 
+repeat(3)
+{
+	with(SpawnObject("Instances", objGrass))
+	{
+		image_xscale = random(0.8) + 0.2;
+		image_yscale = image_xscale;
+	}
+}
 
+repeat(3)
+{
+	SpawnObject("Items", objItem);
 }

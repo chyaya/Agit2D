@@ -1,20 +1,21 @@
 ///@desc crate an instance from the save map
 ///@param map
 
-var map = argument0;
-var object = map[?"object_index"];
-var _layer = map[?"layer"];
+var jsonObj = argument0;
+var object = tj_get(jsonObj, "object_index");
+var _layer = tj_get(jsonObj, "layer");
 
-var instance = instance_create_layer(0, 0, _layer, object);
-
-var var_array = global.g_SaveMeta[?object];
-
-for(var i = 0; i < array_length_1d(var_array); i++)
+with(instance_create_layer(0, 0, _layer, objBlank))
 {
-	var name = var_array[i];	
-	var value = map[?name];
-	
-	variable_instance_set(instance, name, value);
-}
+	var var_array = global.g_SaveMeta[?object];
 
-return instance;
+	for(var i = 0; i < array_length_1d(var_array); i++)
+	{
+		var name = var_array[i];
+		var value = tj_get(jsonObj, name);
+	
+		variable_instance_set(self, name, value);
+	}
+
+	instance_change(object, true);
+}

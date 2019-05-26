@@ -38,8 +38,6 @@ if(!m_ShowInventory)
 	m_ActionNames[ACTION_X] = "Use Item";
 	m_ActionNames[ACTION_Y] = "Open Inventory";
 	
-	PlayerController_SelectAction();
-
 	with(m_PlayerObject)
 	{
 		kLeft        = other.m_Input_AxisL_Left;
@@ -50,6 +48,12 @@ if(!m_ShowInventory)
 		kJump        = other.m_Input_Btn_A;
 		kJumpRelease = other.m_Input_Btn_A_Released;
 	}
+	
+	m_PlayerObjectX = m_PlayerObject.x;
+	m_PlayerObjectY = m_PlayerObject.y;
+	
+	PlayerController_CaptureInteractObject();
+	PlayerController_SelectAction();
 }
 else
 {
@@ -89,3 +93,6 @@ else
 		selected = other.m_SelectedSlotX + other.m_SlotsInRow*other.m_SelectedSlotY + 1;
 	}
 }
+
+PlayerController_DoAction();
+

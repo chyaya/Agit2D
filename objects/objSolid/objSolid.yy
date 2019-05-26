@@ -1,5 +1,5 @@
 {
-    "id": "e40c3bcc-5c07-4386-9240-90e796c83f05",
+    "id": "115415c9-bd96-4d8a-b1bf-a45644582c18",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "objSolid",
@@ -8,7 +8,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "e39828d2-d1ac-4805-a297-187c18c73f5a",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

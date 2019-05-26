@@ -1,4 +1,4 @@
-//tileMapId = layer_tilemap_get_id("Tiles");
+event_inherited();
 
 jumped = false;
 landed = false;

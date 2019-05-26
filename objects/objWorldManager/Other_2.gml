@@ -20,3 +20,5 @@ if(file_exists(fileName))
 
 	LoadInstances(json);
 }
+
+objPlayerController.m_PlayerObject = instance_find(objPlayer, 0);

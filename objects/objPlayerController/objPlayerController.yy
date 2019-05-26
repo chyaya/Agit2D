@@ -5,16 +5,6 @@
     "name": "objPlayerController",
     "eventList": [
         {
-            "id": "a7196d00-c1df-4019-b4a4-a1cf8f7033f7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 7,
-            "m_owner": "e45298e4-7647-41c3-a12f-742fe417ebdc"
-        },
-        {
             "id": "ae6db06b-25ed-409f-a588-bab94cebc000",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -82,6 +72,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 1,
             "eventtype": 3,
+            "m_owner": "e45298e4-7647-41c3-a12f-742fe417ebdc"
+        },
+        {
+            "id": "2047557a-7911-454a-adc9-953d9f823734",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 76,
+            "eventtype": 9,
             "m_owner": "e45298e4-7647-41c3-a12f-742fe417ebdc"
         }
     ],

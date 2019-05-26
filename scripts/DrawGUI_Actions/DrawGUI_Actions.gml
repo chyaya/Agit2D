@@ -4,8 +4,9 @@
 #macro TEXT_OFFSET_Y	(BUTTON_SIZE - TEXT_SIZE)/2
 
 draw_set_font(fontBig);
+draw_set_valign(fa_top);
 
-var pad_x = view_wport[0] - 400, pad_y = view_hport[0] - 400;
+var pad_x = view_wport[0] - 350, pad_y = view_hport[0] - 200;
 draw_sprite_stretched(sprGUI_GamepadY, -1, pad_x + 50, pad_y, BUTTON_SIZE, BUTTON_SIZE);
 draw_set_halign(fa_right);
 draw_text(pad_x + 50 - TEXT_GAP, pad_y + TEXT_OFFSET_Y, m_ActionNames[ACTION_Y]);

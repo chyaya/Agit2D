@@ -11,13 +11,10 @@ with(all)
 	}
 }
 
-var m = json_decode(json);
-var list = m[?"instances"];
+var objArray = tj_decode(json);
 
-for(var i = 0; i < ds_list_size(list); i++)
+for(var i = 0; i < array_length_1d(objArray); i++)
 {
-	var map = list[|i];
-	CreateInstanceFromSaveData(map);
+	var jsonObj = objArray[i];
+	CreateInstanceFromSaveData(jsonObj);
 }
-
-ds_map_destroy(m);

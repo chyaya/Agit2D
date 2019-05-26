@@ -14,3 +14,9 @@ m_ActionNames[ACTION_Y] = "Inventory";
 m_SlotsInRow = 5;
 m_SelectedSlotX = 0;
 m_SelectedSlotY = 0;
+
+m_PlayerObject = noone;
+m_PlayerObjectX = -1;
+m_PlayerObjectY = -1;
+
+m_InteractionObject = noone;
