@@ -37,3 +37,15 @@ draw_set_font(fontDefault);
 draw_text(32, 32, "N: Process A Day");
 draw_text(32, 64, "K: Clear World");
 draw_text(32, 96, "M: Toggle Mute");
+
+if(m_ShowInventory)
+{
+	draw_rectangle(0, 0, viewW, viewH, false);
+	
+	with(m_PlayerObject)
+	{
+		Pawn_Inven_DrawUI(viewW - 300, 100, 48, 5);
+	}
+}
+
+DrawGUI_Actions();
