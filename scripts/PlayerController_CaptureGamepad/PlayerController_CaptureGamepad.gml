@@ -1,4 +1,4 @@
-#macro AXIS_THRESHOLD 0.25
+#macro AXIS_THRESHOLD 0.4
 
 if(gamepad_get_device_count() > 0)
 {
@@ -30,6 +30,16 @@ if(gamepad_get_device_count() > 0)
 		if(gamepad_button_check_pressed(0, gp_padr))
 		{
 			m_Input_DPad_Right = true;	
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_padu))
+		{
+			m_Input_DPad_Up = true;	
+		}
+		
+		if(gamepad_button_check_pressed(0, gp_padd))
+		{
+			m_Input_DPad_Down = true;	
 		}
 	
 		if(gamepad_button_check_pressed(0, gp_face1))

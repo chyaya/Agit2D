@@ -21,14 +21,24 @@
 		m_Input_AxisL_Right = true;
 	}
 	
-	if(keyboard_check_pressed(ord("Q")))
+	if(keyboard_check_pressed(ord("A")))
 	{
 		m_Input_DPad_Left = true;
 	}
 	
-	if(keyboard_check_pressed(ord("E")))
+	if(keyboard_check_pressed(ord("D")))
 	{
 		m_Input_DPad_Right = true;
+	}
+	
+	if(keyboard_check_pressed(ord("W")))
+	{
+		m_Input_DPad_Up = true;
+	}
+	
+	if(keyboard_check_pressed(ord("S")))
+	{
+		m_Input_DPad_Down = true;
 	}
 	
 	if(keyboard_check_pressed(vk_pagedown))

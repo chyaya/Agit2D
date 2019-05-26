@@ -40,6 +40,9 @@ draw_text(32, 96, "M: Toggle Mute");
 
 if(m_ShowInventory)
 {
+	draw_set_alpha(0.5);
+	draw_set_colour(c_black);
+
 	draw_rectangle(0, 0, viewW, viewH, false);
 	
 	with(m_PlayerObject)

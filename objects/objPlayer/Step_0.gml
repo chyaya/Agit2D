@@ -4,7 +4,6 @@
 
 var tempAccel, tempFric;
 
-
 // Movement ///////////////////////////////////////////////////////////////////
 
 // Apply the correct form of acceleration and friction

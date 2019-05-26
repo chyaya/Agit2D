@@ -1,3 +1,7 @@
+draw_set_alpha(1.0);
+draw_set_color(c_white);
+
+
 var inventory_x = argument0;
 var inventory_y = argument1;
 var slot_size = argument2;

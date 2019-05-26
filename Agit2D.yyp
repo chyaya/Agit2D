@@ -639,6 +639,14 @@
             }
         },
         {
+            "Key": "5d872351-5787-48c2-a4fd-87a8a1646c56",
+            "Value": {
+                "id": "a4ccb5a8-7e4f-48bd-871a-33c9995890e6",
+                "resourcePath": "scripts\\PlayerController_SelectAction\\PlayerController_SelectAction.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5f310d31-9564-48e0-b134-46d2ea0b7b2a",
             "Value": {
                 "id": "44669e5b-7b2b-4a82-9cbe-86addb19e50c",
@@ -1645,7 +1653,8 @@
         "1fd41d7d-c219-4ec9-867c-489a9a56348b",
         "fe377bca-a769-490a-b087-01f64fec1fbb",
         "4ac2a886-b4e0-4227-b425-eae86de4f11a",
-        "7c0ce47f-3019-49da-8f24-b1bbf90cf0e7"
+        "7c0ce47f-3019-49da-8f24-b1bbf90cf0e7",
+        "5d872351-5787-48c2-a4fd-87a8a1646c56"
     ],
     "tutorial": ""
 }

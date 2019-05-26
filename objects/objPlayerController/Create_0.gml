@@ -10,3 +10,7 @@ m_ActionNames[ACTION_A] = "Jump";
 m_ActionNames[ACTION_B] = "";
 m_ActionNames[ACTION_X] = "Use Item";
 m_ActionNames[ACTION_Y] = "Inventory";
+
+m_SlotsInRow = 5;
+m_SelectedSlotX = 0;
+m_SelectedSlotY = 0;
