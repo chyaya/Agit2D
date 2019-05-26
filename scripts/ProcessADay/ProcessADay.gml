@@ -1,3 +1,6 @@
+objPlayer.x = 2112;
+objPlayer.y = 288;
+
 with(objTree)
 {
 	if(image_xscale < 2)
