@@ -1,5 +1,5 @@
 // Draw sprite depending on player state
-if (!attacking) {
+if (!m_Attacking) {
     switch (state) {
         case IDLE: 
             image_speed = 0.2;

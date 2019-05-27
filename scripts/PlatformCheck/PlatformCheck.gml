@@ -30,7 +30,7 @@ if (instance_exists(platformTarget)) {
     
 if (vy > 0) {
 	
-    with (objEntity) {
+    with (objLife) {
         {
             if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
                 vy = 0;

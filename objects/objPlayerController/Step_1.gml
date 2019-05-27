@@ -47,6 +47,8 @@ if(!m_ShowInventory)
 
 		kJump        = other.m_Input_Btn_A;
 		kJumpRelease = other.m_Input_Btn_A_Released;
+		
+		kAction		 = other.m_Input_Btn_X;
 	}
 	
 	m_PlayerObjectX = m_PlayerObject.x;

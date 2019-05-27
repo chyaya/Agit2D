@@ -38,8 +38,8 @@ yscale = 1;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-attacking = false;
 blocking  = false;
+sticking = false;
 
 //fallTime = 0;
 //fallMax  = 28;

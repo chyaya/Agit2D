@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "46a9bc33-6d62-42ae-9da0-3542af90a44a",
+            "Value": {
+                "id": "84423ff0-76d1-4305-8311-d598433528fd",
+                "resourcePath": "views\\46a9bc33-6d62-42ae-9da0-3542af90a44a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "49b334ec-aac3-4e0f-ad5a-4eeeec0e878b",
             "Value": {
                 "id": "fca68b69-675e-4975-b22e-400da50faf84",
@@ -747,6 +755,14 @@
             "Value": {
                 "id": "7132ed43-134a-4579-9aec-2a7536757bff",
                 "resourcePath": "views\\58ab5ef0-f915-4646-89c7-7452069ecb9e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5a1629f0-a754-4120-a9df-796dcfb47210",
+            "Value": {
+                "id": "170ad436-1977-47f3-97aa-a8448c5ae486",
+                "resourcePath": "views\\5a1629f0-a754-4120-a9df-796dcfb47210.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -970,7 +986,7 @@
             "Key": "7d961653-01f4-4235-b42f-6b0050c19253",
             "Value": {
                 "id": "2bcc93d8-2c5e-4afc-81c7-aec03eef2033",
-                "resourcePath": "objects\\objEntity\\objEntity.yy",
+                "resourcePath": "objects\\objLife\\objLife.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1035,6 +1051,14 @@
             "Value": {
                 "id": "742476ec-b293-4b28-b821-0c5713680a9f",
                 "resourcePath": "scripts\\Pawn_Inven_GetFirstSlotFor\\Pawn_Inven_GetFirstSlotFor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "87a5c3ba-eb4e-40f8-af20-4643b9937cc0",
+            "Value": {
+                "id": "6298767c-062d-4564-86e2-4bc2719510c4",
+                "resourcePath": "scripts\\Pawn_Attack\\Pawn_Attack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1455,6 +1479,14 @@
             }
         },
         {
+            "Key": "b97dc7ac-59ea-4367-af7b-29d83d2dc9cd",
+            "Value": {
+                "id": "dbd0911a-b242-4d63-a983-11d88969a1c6",
+                "resourcePath": "objects\\objHitBox\\objHitBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bbd6b995-bbee-4e04-805f-1236fefd100b",
             "Value": {
                 "id": "8ac514e2-c469-4e5a-a83a-2fae586a5428",
@@ -1831,6 +1863,14 @@
             }
         },
         {
+            "Key": "f2d56fc0-37eb-4877-a292-1590aa6868ef",
+            "Value": {
+                "id": "88bca774-3839-4c07-8806-6c6d55e00702",
+                "resourcePath": "objects\\objMelee1\\objMelee1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "a9a68b56-4aa7-4a7c-987a-5ed7bd3d310f",
@@ -1926,12 +1966,12 @@
         "921b30a9-6c5c-4577-82bc-3e0d5bdcb483",
         "97686ab1-1e62-4734-87b2-f4645e419197",
         "728b8fe4-487d-44d4-ac56-2662952a2851",
+        "b451ce2a-8f8a-47dd-a5bb-7138c3bc9a58",
+        "8ed56d48-42d5-4ec0-8cb1-9a2823ee7530",
         "68ed2211-f871-4234-8ed8-04d8772af9a9",
         "11eeb7f7-f6d2-45f1-85c5-a84944e7c03e",
         "d81016e0-3547-4c4f-8795-5b74d11b499e",
         "25f09278-0faa-4bf9-a181-7690b4981e6d",
-        "b451ce2a-8f8a-47dd-a5bb-7138c3bc9a58",
-        "8ed56d48-42d5-4ec0-8cb1-9a2823ee7530",
         "1bdb76a0-4f61-497e-a77b-4c9a3128abbb",
         "d948aad4-857d-46cd-88f9-1c93a5574190",
         "5361abce-788f-4651-9810-d7cef1bcfaac",
@@ -1943,6 +1983,7 @@
         "8e91beb2-cc8f-48db-b89c-bb20ba721e7c",
         "11285067-c412-4d47-8685-2f584a790734",
         "b5f1caef-f5b0-40b0-a92e-3eb9f13f335b",
+        "87a5c3ba-eb4e-40f8-af20-4643b9937cc0",
         "1ed81d10-154a-49f3-bb51-a6f0e40d2788",
         "05296d3f-15a0-4762-a269-aa58e2005fc7",
         "0ddc43d6-2323-46cb-abf5-c43d0af7063c",

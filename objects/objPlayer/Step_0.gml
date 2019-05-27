@@ -3,6 +3,7 @@
 // Input //////////////////////////////////////////////////////////////////////
 
 var tempAccel, tempFric;
+var canStick = false;
 
 // Movement ///////////////////////////////////////////////////////////////////
 
@@ -138,7 +139,7 @@ else if (cLeft && !onGround)
 	facing = 1;
 
 // Roll
-if (onGround && !attacking) {
+if (onGround && !m_Attacking) {
 	if (state != ROLL) {
 	    if (kRollL) {
 	        facing = -1;
@@ -167,34 +168,19 @@ if (state == ROLL) {
 	// Break out of roll
 	if (!onGround || (cLeft || cRight)) {
 	    state = IDLE;
-	    if (!attacking)
+	    if (!m_Attacking)
 	        alarm[1] = -1;
 	}
 }
     
 // Action
 if (!kBlock && kAction) {
-	if (!attacking) {
+	if (!m_Attacking) {
 		
 		
-		CreateBlock();
+		//CreateBlock();
 		
-	    //// Attack out of roll
-	    //if (onGround && state == ROLL) {
-	    //    image_index  = 0;
-	    //    image_speed  = 0.5;
-	    //    sprite_index = sPlayerRollSlash;
-            
-	    //    alarm[1]  = 8; 
-	    //    attacking = true;       
-	    //// Jab in place
-	    //} else /*if (onGround && !kRight && !kLeft)*/ {
-	    //    image_index  = 0;
-	    //    image_speed  = 0.33;
-	    //    //sprite_index = sPlayerJab;
-            
-	    //    attacking = true;
-	    //}
+	    Pawn_Attack(self, room_speed*0.5);
 		
 	}
 }
