@@ -1,0 +1,1 @@
+draw_sprite_tiled(s_back, 0, 0, 0);
