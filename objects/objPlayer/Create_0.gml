@@ -46,10 +46,6 @@ sticking = false;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-kLeft = false;
-kRight = false;
-kUp = false;
-kDown = false;
 kJump = false;
 kJumpRelease = false;
 kAction = false;

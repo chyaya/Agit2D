@@ -40,10 +40,21 @@ if(!m_ShowInventory)
 	
 	with(m_PlayerObject)
 	{
-		kLeft        = other.m_Input_AxisL_Left;
-		kRight       = other.m_Input_AxisL_Right;
-		kUp          = other.m_Input_AxisL_Up;
-		kDown        = other.m_Input_AxisL_Down;
+		m_DirX = 0;
+		
+		if(other.m_Input_AxisL_Left)
+			--m_DirX;
+		
+		if(other.m_Input_AxisL_Right)
+			++m_DirX;
+			
+		m_DirY = 0;
+		
+		if(other.m_Input_AxisL_Up)
+			--m_DirY;
+		
+		if(other.m_Input_AxisL_Down)
+			++m_DirY;
 
 		kJump        = other.m_Input_Btn_A;
 		kJumpRelease = other.m_Input_Btn_A_Released;
@@ -61,10 +72,8 @@ else
 {
 	with(m_PlayerObject)
 	{
-		kLeft        = false;
-		kRight       = false;
-		kUp          = false;
-		kDown        = false;
+		m_DirX = 0;
+		m_DirY = 0;
 
 		kJump        = false;
 		kJumpRelease = false;

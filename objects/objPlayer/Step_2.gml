@@ -1,6 +1,9 @@
 /// @description  Entity Step 2.0
 
-//EntityStep();
+event_inherited();
+
+return;
+
 
 jumped = false;
 landed = false;

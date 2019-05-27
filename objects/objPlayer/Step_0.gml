@@ -23,7 +23,7 @@ if ((!cRight && !cLeft) || onGround) {
 }   
 
 // Cling to wall
-if (((kRight && cLeft) || (kLeft && cRight)) && canStick && !onGround) {
+if (((m_DirX > 0 && cLeft) || (m_DirX < 0 && cRight)) && canStick && !onGround) {
 	alarm[0] = clingTime;
 	sticking = true; 
 	canStick = false;       
@@ -42,7 +42,7 @@ if (!onGround) {
 
 if (state != ROLL) {
 // Left 
-if (kLeft && !kRight && !sticking) {
+if (m_DirX < 0 && !sticking) {
 	facing = -1;
 	state  = RUN;
     
@@ -51,7 +51,7 @@ if (kLeft && !kRight && !sticking) {
 	    vx = Approach(vx, 0, tempFric);   
 	vx = Approach(vx, -vxMax, tempAccel);
 // Right
-} else if (kRight && !kLeft && !sticking) {
+} else if (m_DirX > 0 && !sticking) {
 	facing = 1;
 	state  = RUN;
     
@@ -63,7 +63,7 @@ if (kLeft && !kRight && !sticking) {
 }
 
 // Friction
-if (!kRight && !kLeft) {
+if (m_DirX == 0) {
 	vx = Approach(vx, 0, tempFric);
     
 	if (state != ROLL)
@@ -75,7 +75,7 @@ if (kJump && cLeft && !onGround) {
 	yscale = 1.33;
 	xscale = 0.67;
             
-	if (kLeft) {
+	if (m_DirX < 0) {
 	    vy = -jumpHeight * 1.2;
 	    vx =  jumpHeight * .66;
 	} else {
@@ -88,7 +88,7 @@ if (kJump && cRight && !onGround) {
 	yscale = 1.33;
 	xscale = 0.67;
     
-	if (kRight) {
+	if (m_DirX > 0) {
 	    vy = -jumpHeight * 1.2;
 	    vx = -jumpHeight * .66;
 	} else {
@@ -101,7 +101,7 @@ if (kJump && cRight && !onGround) {
 if (kJump) { 
 	if (onGround) {
 	    // Fall thru platform
-	    if (kDown) {
+	    if (m_DirY > 0) {
 	        if (place_meeting(x, y + 1, objJumpThru))
 	            ++y;
 	    } else {
@@ -180,7 +180,7 @@ if (!kBlock && kAction) {
 		
 		//CreateBlock();
 		
-	    Pawn_Attack(self, room_speed*0.5);
+	    Pawn_Attack(self, room_speed*0.2);
 		
 	}
 }

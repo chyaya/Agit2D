@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "0e9e5c26-5523-4ce9-a5c0-6dc7fce0e9f9",
+            "Value": {
+                "id": "ad9fbbbd-4f6f-4a4c-a3f6-fa0dcdb92b2a",
+                "resourcePath": "scripts\\Util_DirToAngle\\Util_DirToAngle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0ed2c251-a92c-44e2-ba0d-4a07bf2bf354",
             "Value": {
                 "id": "f632ed9a-a1c9-416b-b4f4-29bf3d15c4c3",
@@ -975,6 +983,14 @@
             }
         },
         {
+            "Key": "7d312e6d-a900-47bc-a3a9-f9b2e8f643cd",
+            "Value": {
+                "id": "2a88fad9-6538-4bb9-84d4-76ed6b5d66d7",
+                "resourcePath": "scripts\\DrawGUI_Time\\DrawGUI_Time.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7d355dea-153c-406f-84f1-a9213cfcf16c",
             "Value": {
                 "id": "20d6918f-5491-4a9f-ad08-93766cd6101f",
@@ -1404,6 +1420,14 @@
                 "id": "c2c3e256-f9c3-4828-acfe-55229b0499a5",
                 "resourcePath": "sprites\\sprGhostIdle\\sprGhostIdle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0b63ff3-c809-458d-b89d-362899cf4985",
+            "Value": {
+                "id": "c0423535-4715-40e1-a431-c0c971e80f51",
+                "resourcePath": "scripts\\DrawGUI_Debug\\DrawGUI_Debug.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1991,6 +2015,8 @@
         "ad1bd044-59e3-4665-af73-8b5f0de8e35c",
         "1fd41d7d-c219-4ec9-867c-489a9a56348b",
         "fe377bca-a769-490a-b087-01f64fec1fbb",
+        "7d312e6d-a900-47bc-a3a9-f9b2e8f643cd",
+        "b0b63ff3-c809-458d-b89d-362899cf4985",
         "4ac2a886-b4e0-4227-b425-eae86de4f11a",
         "7c0ce47f-3019-49da-8f24-b1bbf90cf0e7",
         "5d872351-5787-48c2-a4fd-87a8a1646c56",
@@ -2000,6 +2026,7 @@
         "c64762f3-6430-4b59-84a5-f89fdbeaa638",
         "34272c8b-3a9f-4f43-933d-6712b1ab46e6",
         "4e3a23e1-1543-49eb-a285-d6721589caa1",
+        "0e9e5c26-5523-4ce9-a5c0-6dc7fce0e9f9",
         "1ce679da-8b24-4ae2-8897-e59abfbb6cca",
         "82afcd4c-0ef6-4dd1-9a28-8ab846d225d1"
     ],
