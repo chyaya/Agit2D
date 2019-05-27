@@ -15,4 +15,7 @@ with(objPlayer)
 	Pawn_Inven_Clear();
 }
 
+objPlayer.x = 2112;
+objPlayer.y = 288;
+
 game_restart();

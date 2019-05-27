@@ -1,7 +1,7 @@
 var i;
 
 // change control var
-var mode_color = objAtmosphereController.m_TimeInDay;
+var mode_color = objWorldManager.m_TimeInDay;
 
 // from dusk till dawn
 if (mode_color = clamp(mode_color, 0, 0.25)) {

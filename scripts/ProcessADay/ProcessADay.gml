@@ -1,6 +1,3 @@
-objPlayer.x = 2112;
-objPlayer.y = 288;
-
 with(objTree)
 {
 	if(image_xscale < 2)
@@ -11,7 +8,10 @@ with(objTree)
 }
 
 
-repeat(3)
+var nTree = instance_number(objTree);
+var nSpawnTree = clamp(50 - nTree, 0, 3);
+
+repeat(nSpawnTree)
 {
 	with(SpawnObject("Instances", objTree))
 	{
@@ -20,7 +20,10 @@ repeat(3)
 	}
 }
 
-repeat(3)
+var nGrass = instance_number(objGrass);
+var nSpawnGrass = clamp(50 - nGrass, 0, 3);
+
+repeat(nSpawnGrass)
 {
 	with(SpawnObject("Instances", objGrass))
 	{
@@ -29,7 +32,10 @@ repeat(3)
 	}
 }
 
-repeat(3)
+var nItem = instance_number(objItem);
+var nSpawnItem = clamp(50 - nItem, 0, 3);
+
+repeat(nSpawnItem)
 {
 	SpawnObject("Items", objItem);
 }

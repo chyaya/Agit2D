@@ -22,3 +22,4 @@ if(file_exists(fileName))
 }
 
 objPlayerController.m_PlayerObject = instance_find(objPlayer, 0);
+
