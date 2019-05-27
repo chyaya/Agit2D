@@ -10,7 +10,7 @@ strSecond = string_replace(strSecond," ", "0");
 var strTime = string(current_hour) + ":" + strMinute + ":" + strSecond;
 
 
-if(objCamera.m_Zoom == 1.0)
+if(instance_number(objCamera) > 0 && objCamera.m_Zoom == 1.0)
 {
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_center);

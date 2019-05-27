@@ -1,0 +1,1 @@
+return round(date_second_span(date_create_datetime(1970,1,2,0,0,0),date_current_datetime())) + 86400;

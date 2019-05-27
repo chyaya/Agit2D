@@ -22,9 +22,3 @@ var_color[9] = 0;
 var_color[10] = 0;
 var_color[11] = 0;
 
-// control var - 0=dawn, 0.25=day, 0.5=sunset, 0.75=night, 1=dawn
-mode_color = 0;
-
-// speed of day/night changing
-mode_speed = 0.0005;
-
