@@ -1,11 +1,15 @@
+var old = shader_current();
+shader_reset();
+
 // sun and moon
 with(objWorldManager) {
     var xx, yy, cam, vx, vy, vw, vh;
 	cam = view_get_camera(0);
-	var matView = camera_get_view_mat(cam);
-	var verts = matrix_transform_vertex(matView, 0, 0, 0);
-	vx = -verts[0];
-	vy = -verts[1];
+	
+	var worldPos = Camera_ScreenToWorld(view_wport[0]/2, view_hport[0]/2);
+	vx = worldPos[0];
+	vy = worldPos[1];
+	
 	vw = camera_get_view_width(cam);
 	vh = camera_get_view_height(cam);
 	
@@ -20,3 +24,5 @@ with(objWorldManager) {
 	draw_sprite_ext(s_moon, 0, xx,  yy, 1, 1, 0, c_white, 1 - sunAlpha);
     
 }
+
+shader_set(old);

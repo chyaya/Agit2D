@@ -6,7 +6,9 @@ if(false == m_PauseTime)
 
 	// 새벽 6시
 	var timeToProcessADay = 6/24;
-	if(m_TimeInDay >= timeToProcessADay && m_LastTimeInDay < timeToProcessADay)
+	if(m_LastTimeInDay >= 0
+		&& m_TimeInDay >= timeToProcessADay
+		&& m_LastTimeInDay < timeToProcessADay)
 	{
 		ProcessADay();	
 	
