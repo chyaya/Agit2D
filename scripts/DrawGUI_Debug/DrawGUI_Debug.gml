@@ -3,7 +3,7 @@ draw_set_halign(fa_left);
 draw_set_font(fontDefault);
 
 var _y = 32;
-draw_text(32, _y, "N: Process A Day");
+draw_text(32, _y, "N: Process A Day (Shift: No Transition)");
 _y += 32;
 
 draw_text(32, _y, "P: Pause Day Night Cycle");
