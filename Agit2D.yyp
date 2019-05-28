@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "06b048b4-2a04-430a-ae37-4fbcf52cd243",
+            "Value": {
+                "id": "0bc2f1cc-0da2-4abb-8d4b-c83b00630104",
+                "resourcePath": "scripts\\Prop_Crafts\\Prop_Crafts.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "09792c0f-6eba-4be0-94de-3c36d8c6bb5b",
             "Value": {
                 "id": "5f04395f-d906-4787-931e-808c04412f0f",
@@ -743,6 +751,14 @@
             }
         },
         {
+            "Key": "53866502-8624-44bd-ad91-c0cdba355770",
+            "Value": {
+                "id": "a8f05082-a16d-4564-a49b-162215beb9d0",
+                "resourcePath": "views\\53866502-8624-44bd-ad91-c0cdba355770.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "53b009ee-c3d0-46ac-aaf4-7f7b79f3e763",
             "Value": {
                 "id": "69822739-f9d6-48f2-8985-5e5494222666",
@@ -1004,6 +1020,14 @@
                 "id": "5c851037-b6f0-447a-b884-6f04f425a7b9",
                 "resourcePath": "scripts\\CreateInstanceFromSaveData\\CreateInstanceFromSaveData.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "73f63fdb-7472-47e5-89ed-39700846fcb8",
+            "Value": {
+                "id": "8f8e01c2-3603-44d2-97b3-485ddfa06d26",
+                "resourcePath": "views\\73f63fdb-7472-47e5-89ed-39700846fcb8.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1396,6 +1420,14 @@
                 "id": "f1d2fee7-340c-4d0a-b2e5-3a6317ceabf2",
                 "resourcePath": "views\\a45cbf61-9777-4538-951d-270121a01f75.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a537ce2a-51c1-471d-b75e-d0b0bfb2ffef",
+            "Value": {
+                "id": "76e80102-e134-43c3-a2c1-81052da52f07",
+                "resourcePath": "scripts\\Prop_AddCraft\\Prop_AddCraft.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2120,6 +2152,8 @@
         "ad1bd044-59e3-4665-af73-8b5f0de8e35c",
         "1fd41d7d-c219-4ec9-867c-489a9a56348b",
         "3e4a30a9-608a-4f7a-81e0-c181a0d8d429",
+        "06b048b4-2a04-430a-ae37-4fbcf52cd243",
+        "a537ce2a-51c1-471d-b75e-d0b0bfb2ffef",
         "fe377bca-a769-490a-b087-01f64fec1fbb",
         "7d312e6d-a900-47bc-a3a9-f9b2e8f643cd",
         "b0b63ff3-c809-458d-b89d-362899cf4985",

@@ -10,9 +10,12 @@ cy -= vyNew;
 
 EntityStep();
 
-// Pit death
-if (bbox_right < 0 || bbox_left > room_width || bbox_top > room_height || bbox_bottom < 0)
-    instance_destroy();
+if(object_index != objPlayer)
+{
+	// Pit death
+	if (bbox_right < 0 || bbox_left > room_width || bbox_top > room_height || bbox_bottom < 0)
+	    instance_destroy();
+}
     
 
 
