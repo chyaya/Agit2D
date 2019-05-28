@@ -21,7 +21,7 @@ repeat(nSpawnTree)
 }
 
 var nGrass = instance_number(objGrass);
-var nSpawnGrass = clamp(50 - nGrass, 0, 3);
+var nSpawnGrass = clamp(100 - nGrass, 0, 10);
 
 repeat(nSpawnGrass)
 {

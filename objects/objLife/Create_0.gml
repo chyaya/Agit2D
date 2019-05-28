@@ -1,7 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-m_MaxHealth = 60;
 m_CurHealth = m_MaxHealth;
 m_LastHealth = m_CurHealth;
 

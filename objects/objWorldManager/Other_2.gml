@@ -1,15 +1,15 @@
 /// @description load data
 
+objPlayerController.m_PlayerObject = noone;
+
 audio_group_load(footstep);
 
 audio_play_sound(sndZelda, 0, true);
 
-var fileName = "save.json";
-
-if(file_exists(fileName))
+if(file_exists(SAVE_FILENAME))
 {
 	var json = "";
-	var file = file_text_open_read("save.json");
+	var file = file_text_open_read(SAVE_FILENAME);
 
 	while(!file_text_eof(file))
 	{
@@ -18,7 +18,15 @@ if(file_exists(fileName))
 
 	file_text_close(file);
 
-	LoadInstances(json);
+	if(false == LoadInstances(json))
+	{
+		show_message("save file format is changed! reset a game.");
+		m_DontSave = true;
+		
+		file_delete(SAVE_FILENAME);
+		game_restart();
+		return;
+	}
 }
 
 objPlayerController.m_PlayerObject = instance_find(objPlayer, 0);

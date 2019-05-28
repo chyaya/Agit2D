@@ -11,10 +11,18 @@ with(all)
 	}
 }
 
-var objArray = tj_decode(json);
+var jsonRootObj = tj_decode(json);
+var version = tj_get(jsonRootObj, "version");
+
+if(version != SAVE_VERSION)
+	return false;
+
+var objArray = tj_get(jsonRootObj, "instances");
 
 for(var i = 0; i < array_length_1d(objArray); i++)
 {
 	var jsonObj = objArray[i];
 	CreateInstanceFromSaveData(jsonObj);
 }
+
+return true;

@@ -1,0 +1,1 @@
+objWorldManager.m_PauseTime = true;

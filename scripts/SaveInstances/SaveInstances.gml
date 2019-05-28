@@ -10,5 +10,7 @@ with(all)
 	}
 }
 
-var json = tj_encode(objArray);
+var jsonRootObj = tj_object("version", SAVE_VERSION, "instances", objArray)
+
+var json = tj_encode(jsonRootObj);
 return json;

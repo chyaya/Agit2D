@@ -1,5 +1,8 @@
 gml_pragma("global", "SaveMeta();");
 
+#macro SAVE_VERSION 3
+#macro SAVE_FILENAME "save.json"
+
 global.g_SaveMeta = ds_map_create();
 global.g_SaveMeta[?objBlock1] = ["x", "y"];
 global.g_SaveMeta[?objBlock2] = ["x", "y"];

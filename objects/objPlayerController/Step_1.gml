@@ -62,8 +62,11 @@ if(!m_ShowInventory)
 		kAction		 = other.m_Input_Btn_X;
 	}
 	
-	m_PlayerObjectX = m_PlayerObject.x;
-	m_PlayerObjectY = m_PlayerObject.y;
+	if(m_PlayerObject != noone)
+	{
+		m_PlayerObjectX = m_PlayerObject.x;
+		m_PlayerObjectY = m_PlayerObject.y;
+	}
 	
 	PlayerController_CaptureInteractObject();
 	PlayerController_SelectAction();
