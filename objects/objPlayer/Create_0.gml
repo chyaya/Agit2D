@@ -9,13 +9,9 @@ facing = 1;
 
 // Movement ///////////////////////////////////////////////////////////////////
 groundAccel = 0.50;
-groundFric  = 2.00;
 airAccel    = 0.75;
-airFric     = 0.01;
 vxMax       = 3.50;
-vyMax       = 10.0;
 jumpHeight  = 6.00;
-gravNorm    = 0.50;
 gravSlide   = 0.25; 
 
 clingTime   = 2.0;

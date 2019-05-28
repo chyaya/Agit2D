@@ -23,8 +23,11 @@ m_Input_Btn_RB = false;
 m_Input_Btn_LT = false;
 m_Input_Btn_RT = false;
 
-PlayerController_CaptureKeyboard();
-PlayerController_CaptureGamepad();
+if(m_InputEnabled)
+{
+	PlayerController_CaptureKeyboard();
+	PlayerController_CaptureGamepad();
+}
 
 if(other.m_Input_Btn_Y)
 {

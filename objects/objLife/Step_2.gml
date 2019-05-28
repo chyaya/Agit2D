@@ -1,3 +1,5 @@
+event_inherited();
+
 if(m_CurHealth == 0 && m_LastHealth > 0)
 {
 	event_user(0);	// Dead

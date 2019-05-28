@@ -1,7 +1,5 @@
 event_inherited();
 
-onGround = OnGround();
-
 cLeft  = place_meeting(x - 1, y, objSolid); 
 cRight = place_meeting(x + 1, y, objSolid);
 

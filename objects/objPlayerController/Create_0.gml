@@ -20,3 +20,4 @@ m_PlayerObjectX = -1;
 m_PlayerObjectY = -1;
 
 m_InteractionObject = noone;
+m_InputEnabled = true;

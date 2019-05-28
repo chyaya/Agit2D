@@ -1,3 +1,11 @@
 /// @description Process A Day (Debug)
 
-ProcessADay();
+if(keyboard_check(vk_shift))
+{
+	ProcessADayImpl();
+}
+else
+{
+	ProcessADay();	
+}
+

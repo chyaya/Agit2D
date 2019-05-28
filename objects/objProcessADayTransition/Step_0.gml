@@ -16,6 +16,11 @@ if(m_Phase == CLOSE)
 		m_Phase = PAUSE;
 		
 		ProcessADayImpl();
+		
+		with(objPlayerController)
+		{
+			PlayerController_SetEnableInput(false);	
+		}
 	}
 }
 else if(m_Phase == PAUSE)
@@ -24,6 +29,11 @@ else if(m_Phase == PAUSE)
 	{
 		m_StartTime = currentSec;
 		m_Phase = OPEN;
+		
+		with(objPlayerController)
+		{
+			PlayerController_SetEnableInput(true);	
+		}
 	}
 	
 }
