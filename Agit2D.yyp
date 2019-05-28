@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "444ab572-4da7-40a3-b8fd-6411f6f73d3b",
+            "Value": {
+                "id": "357fc54f-d3d5-4f8e-bff2-17de99aa4b75",
+                "resourcePath": "fonts\\fontMini\\fontMini.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "447836b5-a83d-49ef-9a72-f8416ce72c05",
             "Value": {
                 "id": "1fece85e-0f29-4d4c-a24b-fce49447a04e",
@@ -1188,6 +1196,14 @@
                 "id": "5541e131-20bd-4196-964b-6e5701836bd3",
                 "resourcePath": "views\\89e88820-b93a-4ea5-aaf0-29bda7374d7e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8a27a717-eb14-4b81-92a1-fc17d3b1f7ed",
+            "Value": {
+                "id": "b6392a61-4cc5-4879-ba89-c1641c5a7a13",
+                "resourcePath": "sprites\\agit_icon\\agit_icon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

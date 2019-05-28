@@ -14,10 +14,11 @@ if(false == variable_instance_exists(id, "total_slots"))
 	
 	//Create Inventory Slots
 	var p = 1
-	while p < total_slots {
-	    inv[p]=0;
+	while p <= total_slots
+	{
+	    inv[p] = 0;
+		inv_count[p] = 0;
 	    p++;
 	}
-	inv[p++]=0
 }
 

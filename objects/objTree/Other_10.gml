@@ -14,7 +14,7 @@ repeat(5)
 	var rx = irandom_range(_x + sprite_get_bbox_left(sprite_index), _x + sprite_get_bbox_right(sprite_index) - 1);
 	var ry = irandom_range(_y + sprite_get_bbox_top(sprite_index), _y + sprite_get_bbox_bottom(sprite_index) - 1);
 	
-	with(Util_CreateItem(rx, ry, woodItemId))
+	with(Util_CreateItem(rx, ry, woodItemId, 1))
 	{
 		vx = random_range(-2, 2);
 		vy = random_range(-5, -3);

@@ -5,18 +5,27 @@
 //Adds items to your inventory.
 
 var ii = 1
-var items = argument1
-while (ii <= total_slots) and items > 0 {
-    if inv[ii]=0
+var itemId = argument0;
+var itemCount = argument1
+
+while (ii <= total_slots) and itemCount > 0
+{
+	if(inv[ii] == 0)
 	{
-		inv[ii]=argument0
-		
+		inv[ii] = itemId;
+		inv_count[ii] = 0;
+	}
+	
+	if(inv[ii] == itemId && inv_count[ii] < global.Item_MaxCount[itemId])
+	{
 		if(global.Item_OnAddOrRemove[inv[ii]] != noone)
 			script_execute(global.Item_OnAddOrRemove[inv[ii]], self, 1);
 			
-		items-=1
+		inv_count[ii] += 1;
+		itemCount -= 1;
 	}
+	
     ii++
 }
 
-return items;
+return itemCount;

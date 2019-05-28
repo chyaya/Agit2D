@@ -6,8 +6,8 @@ if(itemPos == 0)
 var itemId = inv[itemPos];
 if(itemId == 0)
 	return;
-
-if(Pawn_Inven_RemoveItemByPos(itemPos) == 0)
+	
+if(Pawn_Inven_RemoveItemByPos(itemPos, 1) == 0)
 {
 	if(global.Item_OnUse[itemId] != noone)
 		script_execute(global.Item_OnUse[itemId], self);
