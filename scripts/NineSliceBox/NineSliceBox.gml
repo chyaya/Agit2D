@@ -3,14 +3,14 @@
 var _sprite_index = argument[0];
 var _x1 = argument[1];
 var _y1 = argument[2];
-var _x2 = argument[3];
-var _y2 = argument[4];
+var _x2 = _x1 + argument[3];
+var _y2 = _y1 + argument[4];
 var _scale = argument_count > 5 ? argument[5] : 1;
 
 var _img_size = sprite_get_width(_sprite_index)/3;
 var _size = _img_size*_scale;
-var _w = _x2 - _x1;
-var _h = _y2 - _y1;
+var _w = _x2 - _x1 - 1;
+var _h = _y2 - _y1 - 1;
 var _columns = _w div _size;
 var _rows = _h div _size;
 

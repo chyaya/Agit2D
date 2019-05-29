@@ -15,14 +15,14 @@ yy = 0
 while (ss <= total_slots) { //Draw the background slots.
 	if (xx < slots_in_row) {
 	    if selected = ss {
-	        draw_sprite_stretched(
-				slot_selected,0,xx*slot_size+inventory_x,yy*slot_size+inventory_y,
-				slot_size, slot_size);
+			NineSliceBoxStretch(slot_selected,
+				xx*slot_size+inventory_x,yy*slot_size+inventory_y,
+				slot_size, slot_size, 3);
 	        }
 	    else {
-	        draw_sprite_stretched(
-				slot_sprite,0,xx*slot_size+inventory_x,yy*slot_size+inventory_y,
-				slot_size, slot_size);
+	        NineSliceBoxStretch(slot_sprite,
+				xx*slot_size+inventory_x,yy*slot_size+inventory_y,
+				slot_size, slot_size, 3);
 	        }
 	    xx+=1;
 	    ss+=1;
