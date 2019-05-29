@@ -839,6 +839,14 @@
             }
         },
         {
+            "Key": "59ca428f-0248-47ca-930d-6a34a51940f4",
+            "Value": {
+                "id": "452817de-4584-45c1-ab24-92d6aabbd932",
+                "resourcePath": "scripts\\NineSliceBox\\NineSliceBox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5a1629f0-a754-4120-a9df-796dcfb47210",
             "Value": {
                 "id": "170ad436-1977-47f3-97aa-a8448c5ae486",
@@ -1735,6 +1743,14 @@
             }
         },
         {
+            "Key": "c76277e6-1e8c-4dac-8ff9-1f376ba79e76",
+            "Value": {
+                "id": "ae96225a-69e0-45c5-997d-5846c21bd8ca",
+                "resourcePath": "views\\c76277e6-1e8c-4dac-8ff9-1f376ba79e76.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c7a06c3d-8bbf-4dcf-8209-f0d382a38c74",
             "Value": {
                 "id": "f2926932-dcc8-4941-8506-231f38d68efe",
@@ -2173,6 +2189,7 @@
         "fe377bca-a769-490a-b087-01f64fec1fbb",
         "7d312e6d-a900-47bc-a3a9-f9b2e8f643cd",
         "b0b63ff3-c809-458d-b89d-362899cf4985",
+        "59ca428f-0248-47ca-930d-6a34a51940f4",
         "4ac2a886-b4e0-4227-b425-eae86de4f11a",
         "7c0ce47f-3019-49da-8f24-b1bbf90cf0e7",
         "5d872351-5787-48c2-a4fd-87a8a1646c56",

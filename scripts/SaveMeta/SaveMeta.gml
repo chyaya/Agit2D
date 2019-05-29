@@ -1,6 +1,6 @@
 gml_pragma("global", "SaveMeta();");
 
-#macro SAVE_VERSION 4
+#macro SAVE_VERSION 5
 #macro SAVE_FILENAME "save.json"
 
 global.g_SaveMeta = ds_map_create();

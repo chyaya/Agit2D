@@ -6,7 +6,8 @@
     "children": [
         "fe377bca-a769-490a-b087-01f64fec1fbb",
         "7d312e6d-a900-47bc-a3a9-f9b2e8f643cd",
-        "b0b63ff3-c809-458d-b89d-362899cf4985"
+        "b0b63ff3-c809-458d-b89d-362899cf4985",
+        "c76277e6-1e8c-4dac-8ff9-1f376ba79e76"
     ],
     "filterType": "GMScript",
     "folderName": "gui",
