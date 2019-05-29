@@ -41,9 +41,14 @@
 		m_Input_DPad_Down = true;
 	}
 	
-	if(keyboard_check_pressed(vk_pagedown))
+	if(keyboard_check_pressed(ord("Q")))
 	{
-		m_Input_Btn_RT = true;
+		m_Input_Btn_LB = true;
+	}
+	
+	if(keyboard_check_pressed(ord("E")))
+	{
+		m_Input_Btn_RB = true;
 	}
 
 	if(keyboard_check_pressed(vk_up))

@@ -11,7 +11,7 @@ m_ActionNames[ACTION_B] = "";
 m_ActionNames[ACTION_X] = "Use Item";
 m_ActionNames[ACTION_Y] = "Inventory";
 
-m_SlotsInRow = 6;
+m_SlotsInRow = 10;
 m_SelectedSlotX = 0;
 m_SelectedSlotY = 0;
 
@@ -21,3 +21,11 @@ m_PlayerObjectY = -1;
 
 m_InteractionObject = noone;
 m_InputEnabled = true;
+
+#macro TAB_INVENTORY	0
+#macro TAB_CRAFT		1
+#macro MAX_TAB			2
+
+m_CurTab = TAB_INVENTORY;
+
+m_SelectedCraftIndex = 1;

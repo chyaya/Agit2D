@@ -29,17 +29,28 @@ if(m_InputEnabled)
 	PlayerController_CaptureGamepad();
 }
 
-if(other.m_Input_Btn_Y)
+if(m_Input_Btn_Y)
 {
 	m_ShowInventory = !m_ShowInventory;
 }
+
+if(m_Input_Btn_LB)
+{
+	m_CurTab = max(m_CurTab - 1, 0);
+}
+
+if(m_Input_Btn_RB)
+{
+	m_CurTab = min(m_CurTab + 1, MAX_TAB - 1);
+}
+
 
 if(!m_ShowInventory)
 {
 	m_ActionNames[ACTION_A] = "Jump";
 	m_ActionNames[ACTION_B] = "";
 	m_ActionNames[ACTION_X] = "Use Item";
-	m_ActionNames[ACTION_Y] = "Open Inventory";
+	m_ActionNames[ACTION_Y] = "Open Bag";
 	
 	with(m_PlayerObject)
 	{
@@ -85,29 +96,17 @@ else
 		kJumpRelease = false;
 	}
 	
-	m_ActionNames[ACTION_A] = "";
-	m_ActionNames[ACTION_B] = "";
-	m_ActionNames[ACTION_X] = "";
-	m_ActionNames[ACTION_Y] = "Close Inventory";
+	m_ActionNames[ACTION_Y] = "Close Bag";
 	
-	if(m_Input_DPad_Left)
-		--m_SelectedSlotX;
-		
-	if(m_Input_DPad_Right)
-		++m_SelectedSlotX;
-	
-	if(m_Input_DPad_Up)
-		--m_SelectedSlotY;
-		
-	if(m_Input_DPad_Down)
-		++m_SelectedSlotY;
-	
-	m_SelectedSlotX = clamp(m_SelectedSlotX, 0, m_SlotsInRow - 1);
-	m_SelectedSlotY = clamp(m_SelectedSlotY, 0, m_PlayerObject.total_slots/m_SlotsInRow - 1);
-		
-	with(m_PlayerObject)
+	switch(m_CurTab)
 	{
-		selected = other.m_SelectedSlotX + other.m_SlotsInRow*other.m_SelectedSlotY + 1;
+	case TAB_INVENTORY:
+		PlayerController_GUI_Inventory();
+		break;
+	case TAB_CRAFT:
+		PlayerController_GUI_Craft();
+		break;
+		
 	}
 }
 
