@@ -1,0 +1,1 @@
+global.Room_Template[room] = SaveInstances();

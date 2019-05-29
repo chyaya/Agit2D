@@ -1511,6 +1511,14 @@
             }
         },
         {
+            "Key": "a5c7107f-018c-4b66-ba38-e704f1702da3",
+            "Value": {
+                "id": "e55475bc-255c-47ab-a839-c174b5e24276",
+                "resourcePath": "objects\\objSaveRoomToJson\\objSaveRoomToJson.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a6027688-7e57-49a6-a734-70ea6752caa7",
             "Value": {
                 "id": "bee68ed2-dd41-405e-a1da-535f83372375",
@@ -2079,6 +2087,14 @@
             }
         },
         {
+            "Key": "eecc4bfd-2a70-479c-8cf8-ab31386be17a",
+            "Value": {
+                "id": "a10b10b6-7bba-433f-a177-394853d3f5bb",
+                "resourcePath": "rooms\\roomHouse\\roomHouse.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ef9ba69f-fb14-4a18-8804-8d258bca586d",
             "Value": {
                 "id": "1c4d96e1-2e84-4b46-a28a-48ea6b6241e6",
@@ -2140,6 +2156,14 @@
                 "id": "7d88dd83-d5d3-452f-90c8-a7ada5d7975d",
                 "resourcePath": "datafiles_yy\\tjson-doc.html.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "f70a8886-96e5-4ae0-b59f-e3b1173c8363",
+            "Value": {
+                "id": "09cdd14b-b5cf-4ac8-82b0-9cbe832c63b0",
+                "resourcePath": "views\\f70a8886-96e5-4ae0-b59f-e3b1173c8363.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
