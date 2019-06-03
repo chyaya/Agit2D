@@ -1,15 +1,9 @@
 ///@desc destroy all savable instance, and load new ones from json
 ///@param json
 
-var json = argument0;
-
-with(all)
-{
-	if(ds_map_exists(global.g_SaveMeta, object_index))
-	{
-		instance_destroy();
-	}
-}
+var json = argument[0];
+var offsetX = argument_count > 1 ? argument[1] : 0;
+var offsetY = argument_count > 2 ? argument[2] : 0;
 
 var jsonRootObj = tj_decode(json);
 var version = tj_get(jsonRootObj, "version");
@@ -24,7 +18,11 @@ for(var i = 0; i < array_length_1d(objArray); i++)
 {
 	var jsonObj = objArray[i];
 	
-	objList[i] = CreateInstanceFromSaveData(jsonObj);
+	var instance = CreateInstanceFromSaveData(jsonObj);
+	instance.x += offsetX;
+	instance.y += offsetY;
+	
+	objList[i] = instance
 }
 
 return objList;

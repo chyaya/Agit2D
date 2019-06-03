@@ -5,7 +5,9 @@ var jsonObj = argument0;
 var object = tj_get(jsonObj, "object_index");
 var _layer = tj_get(jsonObj, "layer");
 
-with(instance_create_layer(0, 0, _layer, objBlank))
+var instance = instance_create_layer(0, 0, layer_get_id(_layer), objBlank);
+
+with(instance)
 {
 	var var_array = global.g_SaveMeta[?object];
 
@@ -19,3 +21,5 @@ with(instance_create_layer(0, 0, _layer, objBlank))
 
 	instance_change(object, true);
 }
+
+return instance;

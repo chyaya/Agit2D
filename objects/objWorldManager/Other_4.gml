@@ -18,6 +18,8 @@ if(file_exists(SAVE_FILENAME))
 
 	file_text_close(file);
 
+	ClearSavableInstances();
+
 	if(array_length_1d(LoadInstances(json)) == 0)
 	{
 		show_message("save file format is changed! reset a game.");

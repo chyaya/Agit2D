@@ -6,7 +6,9 @@ var object = instance.object_index;
 
 var var_array = global.g_SaveMeta[?object];
 
-var jsonObj = tj_object("object_index", object, "layer", instance.layer);
+
+
+var jsonObj = tj_object("object_index", object, "layer", layer_get_name(instance.layer));
 
 for(var i = 0; i < array_length_1d(var_array); i++)
 {

@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "69489b6c-58fa-4acb-8ef6-61636a038af4",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
+            }
+        },
+        {
             "Key": "77c989e4-ae8e-47bc-9220-5d7e27ddc93e",
             "Value": {
                 "id": "e209f4f2-d126-4655-9577-2705f04b9a01",
@@ -1091,6 +1099,14 @@
             "Value": {
                 "id": "5271a2e8-effa-42ee-b0a5-c51bb7bc9667",
                 "resourcePath": "scripts\\__GMA_BREAKPOINT__\\__GMA_BREAKPOINT__.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "79888daa-f3ae-4c1c-880b-eba23ba30241",
+            "Value": {
+                "id": "a27af06e-8b65-4029-9601-a34a69f3b2e7",
+                "resourcePath": "scripts\\ClearSavableInstances\\ClearSavableInstances.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2235,6 +2251,7 @@
         "f1d1518b-325c-4cb6-875f-746568317eae",
         "dd37fbf4-70fa-4ce8-a4aa-0e0f0e3d3a58",
         "bbd6b995-bbee-4e04-805f-1236fefd100b",
+        "79888daa-f3ae-4c1c-880b-eba23ba30241",
         "921b30a9-6c5c-4577-82bc-3e0d5bdcb483",
         "97686ab1-1e62-4734-87b2-f4645e419197",
         "728b8fe4-487d-44d4-ac56-2662952a2851",
